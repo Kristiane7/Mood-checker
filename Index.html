@@ -8,12 +8,22 @@
 <body>
   <div class="container">
     <h1>Mood Tracker</h1>
-    <input type="text" id="moodInput" placeholder="Enter your mood..." />
+
+    <select id="moodInput">
+      <option value="">-- Select your mood --</option>
+      <option value="happy">Happy</option>
+      <option value="excited">Excited</option>
+      <option value="tired">Tired</option>
+      <option value="anxious">Anxious</option>
+      <option value="sad">Sad</option>
+    </select>
+
     <button onclick="addMood()">Add Mood</button>
-    <button onclick="analyzeMood()">Show Analysis</button>
+    <button onclick="analyzeMood()">Analyze</button>
 
     <div id="moodList"></div>
     <div id="analysisResult"></div>
+    <div id="quoteBox"></div>
   </div>
 
   <script src="script.js"></script>
